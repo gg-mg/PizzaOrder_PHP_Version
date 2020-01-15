@@ -18,19 +18,20 @@
     <inline><input type="radio" name="pie_size" value="large">Large</inline>
     <inline><input type="radio" name="pie_size" value="extra_large">Extra_Large</inline></p>
     </div>
-
+    <div class="radio-container">
     <p><strong>Veg Toppings:</strong>
-    <inline><input type="checkbox" name="top[]" value="mushroom">Mushroom</inline>
-    <inline><input type="checkbox" name="top[]" value="olives">Olives</inline>
-    <inline><input type="checkbox" name="top[]" value="peppers">Green Peppers</inline>
-    <inline><input type="checkbox" name="top[]" value="tomato">Tomatoes & Pepper</inline></p>
+    <input type="checkbox" name="top[]" value="mushroom">Mushroom
+    <input type="checkbox" name="top[]" value="olives">Olives
+    <input type="checkbox" name="top[]" value="peppers">Green Peppers
+    <input type="checkbox" name="top[]" value="tomato">Tomatoes & Pepper</p>
     </div>
-
-    <p><strong>Meat Toppings:</strong>
-    <inline><input type="checkbox" name="top[]" value="pepperoni">Pepperoni</inline>
-    <inline><input type="checkbox" name="top[]" value="borewors">Borewors</inline>
-    <inline><input type="checkbox" name="top[]" value="chicken">Fried Chicken</inline>
-    <inline><input type="checkbox" name="top[]" value="ham">Ham Delight</inline></p>
+  
+    <div>
+    <h4><strong>Meat Toppings:</strong>
+    <input type="checkbox" name="top[]" value="pepperoni">Pepperoni
+    <input type="checkbox" name="top[]" value="borewors">Borewors
+    <input type="checkbox" name="top[]" value="chicken">Fried Chicken
+     <input type="checkbox" name="top[]" value="ham">Ham Delight</h4>
     </div>
 
     <div>
