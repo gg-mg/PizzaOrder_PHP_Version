@@ -10,7 +10,7 @@
 <header>
 <h1>Rocketman Pizza</h1>
 </header>
-    <form action="pizza-dsplay.php" method="post">
+    <form action="pizza_display.php" method="post">
     <div>
    <p><strong>Pizza Size:</strong>
     <inline><input type="radio" name="pie_size" value="small">Small</inline>
@@ -41,12 +41,15 @@
     <inline><input type="radio" name="crust" value="stuffed">Stuffed Crust</inline>
     <inline><input type="radio" name="crust" value="gelatin_free">Gelatin Free</inline></p>
 
-    </div>   
-
+    
+    <input type="submit" value="click" name="submit">
     </form>
+     <!-- </div>   
     <div id="buttons">
     <label>&nbsp</label>
-    <input type="submit" value="Calculate"> <br>
+    <input type="submit" value="Calculate" name="submit"> <br>
+    </div> -->
+     
     
 </body>
 </html>
