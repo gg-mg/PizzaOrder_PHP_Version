@@ -41,11 +41,15 @@
     <inline><input type="radio" name="crust" value="italian">Italian</inline>
     <inline><input type="radio" name="crust" value="stuffed">Stuffed Crust</inline>
     <inline><input type="radio" name="crust" value="gelatin_free">Gelatin Free</inline></p>
-
+    </div> 
+    <div class="form-group row align-items-center">
+            <label><strong>Number of Pizzas</strong></label>
+            <input class="form-control" id="pizzaCount" type="number" name="pizzaCount" min="1" />
+          </div>
     
     <input class = "click" type="submit" value="click" name="submit">
     </form>
-    </div>   
+     
     <div id="buttons">
     <label>&nbsp</label>
     <input type="submit" value="Calculate" name="submit"> <br>

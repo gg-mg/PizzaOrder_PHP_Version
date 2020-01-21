@@ -1,10 +1,10 @@
 <?php
 
 if (isset($_POST['submit'])) {
-    $pie_size = filter_input(INPUT_POST,'pie_size');
+    $pie_size = filter_input(INPUT_POST, 'pie_size');
     $toppings = filter_input(INPUT_POST, 'top', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
-    $crust = filter_input(INPUT_POST,'crust');
-
+    $crust = filter_input(INPUT_POST, 'crust');
+    $pizzaCount = filter_input(INPUT_POST, 'pizzaCount');
 }
 ?>
 <!DOCTYPE html>
@@ -16,16 +16,18 @@ if (isset($_POST['submit'])) {
     <title>RocketMan Pizza</title>
 </head>
 <body>
-<h1>Output</h1>    
-<p><?php echo $pie_size; ?></p>
-<p><?php   if($toppings !==NULL){
-        foreach ($toppings as  $value) {
-            echo $value. '<br>';
-        }
-    }  else {
-        echo 'No toppings selected.';
-    } ?></p>
-<p><?php echo $crust; ?></p>
+<h3>Pizza Order</h3>    
+<p><strong>Size: </strong><?php echo $pie_size; ?></p>
+<p><strong>Toppings:</strong></p>
+<p><?php   if ($toppings !==null) {
+    foreach ($toppings as  $value) {
+        echo $value. '<br>';
+    }
+} else {
+    echo 'No toppings selected.';
+} ?></p>
+<p><strong>Crust:</strong> <?php echo $crust; ?></p>
+<p><strong>Quantity:</strong> <?php echo $pizzaCount; ?></p>
 
 <!-- The code below will output key/value pair -->
 <!-- Use.....foreach (toppings $key => $value).... to get key/value pair  -->
