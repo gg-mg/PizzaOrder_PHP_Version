@@ -2,7 +2,7 @@
 
 if (isset($_POST['submit'])) {
     $pie_size = filter_input(INPUT_POST,'pie_size');
-    $toppings = filter_input(INPUT_POST, 'top[]', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
+    $toppings = filter_input(INPUT_POST, 'top', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
     $crust = filter_input(INPUT_POST,'crust');
 
 }
@@ -18,14 +18,20 @@ if (isset($_POST['submit'])) {
 <body>
 <h1>Output</h1>    
 <p><?php echo $pie_size; ?></p>
-<p><?php   if(toppings !==NULL){
-        foreach (toppings as  $value) {
-            echo $value['name'] . '<br>';
+<p><?php   if($toppings !==NULL){
+        foreach ($toppings as  $value) {
+            echo $value. '<br>';
         }
     }  else {
         echo 'No toppings selected.';
     } ?></p>
 <p><?php echo $crust; ?></p>
 
+<!-- The code below will output key/value pair -->
+<!-- Use.....foreach (toppings $key => $value).... to get key/value pair  -->
+  <!-- echo $key . '=' . $value .'<br>'; -->
+
 </body>
 </html>
+
+   

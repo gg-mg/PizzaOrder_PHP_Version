@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rocketman Pizza</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 <header>
@@ -42,13 +43,13 @@
     <inline><input type="radio" name="crust" value="gelatin_free">Gelatin Free</inline></p>
 
     
-    <input type="submit" value="click" name="submit">
+    <input class = "click" type="submit" value="click" name="submit">
     </form>
-     <!-- </div>   
+    </div>   
     <div id="buttons">
     <label>&nbsp</label>
     <input type="submit" value="Calculate" name="submit"> <br>
-    </div> -->
+    </div>
      
     
 </body>
