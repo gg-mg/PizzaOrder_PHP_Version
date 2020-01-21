@@ -28,11 +28,11 @@
     </div>
   
     <div>
-    <h4><strong>Meat Toppings:</strong>
+    <label><strong>Meat Toppings:</strong></label>
     <input type="checkbox" name="top[]" value="pepperoni">Pepperoni
     <input type="checkbox" name="top[]" value="borewors">Borewors
     <input type="checkbox" name="top[]" value="chicken">Fried Chicken
-     <input type="checkbox" name="top[]" value="ham">Ham Delight</h4>
+     <input type="checkbox" name="top[]" value="ham">Ham Delight
     </div>
 
     <div>
